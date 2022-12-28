@@ -32,6 +32,8 @@ INSERT INTO albums(album_id, name, "year") VALUES (10, 'Cults', 2011); --3
 INSERT INTO albums(album_id, name, "year") VALUES (11, 'Geidi Primes', 2010); --2
 INSERT INTO albums(album_id, name, "year") VALUES (12, 'Forever Young', 1984); --1
 INSERT INTO albums(album_id, name, "year") VALUES (13, 'Désobéissance', 2018); --4
+INSERT INTO albums(album_id, name, "year") VALUES (14, 'L’Emprise', 2022); --4
+INSERT INTO albums(album_id, name, "year") VALUES (15, 'Madame X', 2020); --6
 
 -- Треки
 INSERT INTO tracks(track_id, name, duration, album_id) VALUES (1, 'A Victory of Love', 254, 12); --1
@@ -51,6 +53,9 @@ INSERT INTO tracks(track_id, name, duration, album_id) VALUES (14, 'Disillusion 
 INSERT INTO tracks(track_id, name, duration, album_id) VALUES (15, 'Sitting in the Palmtree', 217, 2); --7
 INSERT INTO tracks(track_id, name, duration, album_id) VALUES (16, 'Rolling Stone', 225, 13); --7
 INSERT INTO tracks(track_id, name, duration, album_id) VALUES (17, 'Sentimentale', 256, 13); --7
+INSERT INTO tracks(track_id, name, duration, album_id) VALUES (18, 'Invisibles', 235, 14); --4
+INSERT INTO tracks(track_id, name, duration, album_id) VALUES (19, 'À tout jamais', 246, 14); --4
+INSERT INTO tracks(track_id, name, duration, album_id) VALUES (20, 'Medellín', 298, 15); --6
 
 -- Сборники
 INSERT INTO collections(collection_id, name, "year") VALUES (1, 'Collection 1', 1990);
@@ -98,6 +103,10 @@ INSERT INTO singers_albums(album_id, singer_id) VALUES (9, 4);
 INSERT INTO singers_albums(album_id, singer_id) VALUES (10, 3);
 INSERT INTO singers_albums(album_id, singer_id) VALUES (11, 2);
 INSERT INTO singers_albums(album_id, singer_id) VALUES (12, 1);
+INSERT INTO singers_albums(album_id, singer_id) VALUES (12, 1);
+INSERT INTO singers_albums(album_id, singer_id) VALUES (13, 4);
+INSERT INTO singers_albums(album_id, singer_id) VALUES (14, 4);
+INSERT INTO singers_albums(album_id, singer_id) VALUES (15, 6);
 
 -- Треки в сборниках
 INSERT INTO tracks_collections(collection_id, track_id) VALUES (1, 1);
@@ -124,4 +133,6 @@ INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 8);
 INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 10);
 INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 16);
 INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 17);
-
+INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 18);
+INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 19);
+INSERT INTO tracks_collections(collection_id, track_id) VALUES (8, 20);
